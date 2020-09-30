@@ -110,29 +110,29 @@ $(document).ready(function(){
   // QUIZ CONTENT ------
     quiz = [
     {
-      question: "1.  Which one is AAPL?",
-      answers: ["AAPL", "GS", "AXP", "BA"],
-      correctAnswer: "AAPL",
+      question: "1. 下列公司何者為蘋概股?",
+      answers: ['味全', "可成", "台塑", "大宇"],
+      correctAnswer: "可成",
     },
     {
-      question: "2. Which one is DIS?",
-      answers: ["CAT", "BA", "GS", "DIS"],
-      correctAnswer: "DIS"
+      question: "2. 哪一家公司專門做半導體?",
+      answers: ["廣達", "大立光", "美律", "台積電"],
+      correctAnswer: "台積電"
     },
     {
-      question: "3. Which one is DWDP?",
-      answers: ["CAT", "MRK", "GS", "DWDP"],
-      correctAnswer: "DWDP"
+      question: "3. 哪一家公司專門做鏡頭?",
+      answers: ["大立光", "國巨", "台達電", "宏捷科"],
+      correctAnswer: "大立光"
     },
     {
-      question: "4. Which one is MMM?",
-      answers: ["MSFT", "MMM", "MCD", "WMT"],
-      correctAnswer: "MMM"
+      question: "4. 哪一家公司為美國費城半導體指數公司之一?",
+      answers: ["鴻海", "台積電", "玉晶光", "大立光"],
+      correctAnswer: "台積電"
     },
     {
-      question: "5. Which one is TRV?",
-      answers: ["GE", "JNJ", "CRM", "TRV"],
-      correctAnswer: "TRV"    
+      question: "5. 下列何者為美律?",
+      answers: ["可成", "瑞昱", "美律", "大立光"],
+      correctAnswer: "美律"    
     }
   ];
   
@@ -378,7 +378,7 @@ $(document).ready(function(){
     resultsPage.hide();
     initPage.show(300);
   ScooreDom.innerHTML=0;
-    score=0;
+      score=0;
     // Start the quiz over
     newQuiz();
     
