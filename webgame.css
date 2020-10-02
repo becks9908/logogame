@@ -29,9 +29,31 @@ body {
   justify-content: center;
   min-height: 480px;
 }
+.topp{
+position: fixed;
+display: inline;
+}
+ul li{
+list-style-type:none;
+list-style-image: url(aa/%E6%87%89%E7%B6%93%E7%BE%8A.gif);
+}
+.goto{
+width: 50px;
+    
+background:    #2f466e;
+
+border:        2px solid #ffffff;
+padding:       20px 50px 20px 40px;
+color:         #fbfbfb;
+display:       inline-block;
+  font-family: 'Ranchers', cursive;
+text-align:    center;
+text-shadow:   1px 1px #444444;
+    font-size: 5px;
+}
 
 h1, h2, h3, h4, h5, h6, div, p, i {
-  margin: 0;s
+  margin: 0;
 }
 
 form {
