@@ -57,6 +57,7 @@ const ScooreDom = document.getElementById('scorenum');
     var audio1 = document.getElementById("correct");
     var audio2 = document.getElementById("incorrect");
     var audio3 = document.getElementById("end");
+    var audio4 = document.getElementById("end2");
 
 $(document).ready(function(){
   
@@ -334,9 +335,11 @@ $(document).ready(function(){
       questionsPage.hide();
       resultsPage.show(300);
       // Display user score as a percentage
-           audio3.play();
+           if(correctAnswersCounter==quiz.length){audio4.play();}
+        else{
+            audio3.play();
       userScore.text(Math.floor((correctAnswersCounter / quiz.length) * 100) + "%");
-     
+     }
     }
     
     // Load the next question and set of answers
