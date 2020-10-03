@@ -112,18 +112,18 @@ $(document).ready(function(){
     quiz = [
     {
       question: "1. 下列公司何者為蘋概股?",
-      answers: ['味全', "可成", "台塑", "大宇"],
-      correctAnswer: "可成",
+      answers: ['興勤', "聯昌", "凱美", "瑞昱"],
+      correctAnswer: "瑞昱",
     },
     {
-      question: "2. 哪一家公司專門做半導體?",
-      answers: ["廣達", "大立光", "美律", "台積電"],
-      correctAnswer: "台積電"
+      question: "2. 哪一家公司專門做鏡頭?",
+      answers: ["廣達", "宏捷科", "美律", "玉晶光"],
+      correctAnswer: "玉晶光"
     },
     {
-      question: "3. 哪一家公司專門做鏡頭?",
-      answers: ["大立光", "國巨", "台達電", "宏捷科"],
-      correctAnswer: "大立光"
+      question: "3. 哪一家公司專門做半導體?",
+      answers: ["日月光", "國巨", "台達電", "宏捷科"],
+      correctAnswer: "日月光"
     },
     {
       question: "4. 哪一家公司為美國費城半導體指數公司之一?",
