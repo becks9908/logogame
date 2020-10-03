@@ -1,5 +1,4 @@
 // VARIABLE DECLARATIONS ------
-  
     //score
 const ScooreDom = document.getElementById('scorenum');
       // pages
@@ -58,7 +57,7 @@ const ScooreDom = document.getElementById('scorenum');
     var audio2 = document.getElementById("incorrect");
     var audio3 = document.getElementById("end");
     var audio4 = document.getElementById("end2");
-
+    
 
 $(document).ready(function(){
   
@@ -128,7 +127,7 @@ $(document).ready(function(){
     },
     {
       question: "4. Which one is MMM?",
-      answers: ["MSFT", "MMM", "MCD", "WMT"],
+      answers: ["MSFT", "WMT", "MCD", "MMM"],
       correctAnswer: "MMM"
     },
     {
@@ -338,7 +337,7 @@ $(document).ready(function(){
       // Display user score as a percentage
            if(correctAnswersCounter==quiz.length){audio4.play();}
         else{
-            audio3.play();
+            audio4.play();
       userScore.text(Math.floor((correctAnswersCounter / quiz.length) * 100) + "%");
      }
     }
