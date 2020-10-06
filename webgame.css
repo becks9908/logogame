@@ -112,8 +112,9 @@ form {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    width: 210px;
-    height: 9%;
+    font-size: 25px;
+    width: 250px;
+    height: 15%;
     background: orange;
     position: fixed;
     top: 5px;
@@ -125,12 +126,7 @@ form {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    width: 210px;
-    height: 9%;
-
-    position: fixed;
-    top: 5px;
-    right: -65px;
+  
     
 }
 

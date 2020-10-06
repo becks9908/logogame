@@ -112,28 +112,28 @@ $(document).ready(function(){
     quiz = [
     {
       question: "1.  Which one is AAPL?",
-      answers: ["AAPL", "GS", "AXP", "BA"],
+      answers: ["AAPL", "DIS", "IBM", "INTC"],
       correctAnswer: "AAPL",
     },
     {
       question: "2. Which one is DIS?",
-      answers: ["CAT", "BA", "GS", "DIS"],
+      answers: ["ADBE", "TSLA", "FB", "DIS"],
       correctAnswer: "DIS"
     },
     {
-      question: "3. Which one is DWDP?",
-      answers: ["CAT", "MRK", "GS", "DWDP"],
-      correctAnswer: "DWDP"
+      question: "3. Which one is MCD?",
+      answers: ["NKE", "SBUX", "AMZN", "MCD"],
+      correctAnswer: "MCD"
     },
     {
       question: "4. Which one is MMM?",
-      answers: ["MSFT", "WMT", "MCD", "MMM"],
+      answers: ["MSFT", "KO", "MCD", "MMM"],
       correctAnswer: "MMM"
     },
     {
-      question: "5. Which one is TRV?",
-      answers: ["GE", "JNJ", "CRM", "TRV"],
-      correctAnswer: "TRV"    
+      question: "5. Which one is IBM?",
+      answers: ["INTC", "JNJ", "MSFT", "IBM"],
+      correctAnswer: "IBM"    
     }
   ];
   
@@ -380,7 +380,8 @@ $(document).ready(function(){
     // Go to the first page
     resultsPage.hide();
     initPage.show(300);
-  ScooreDom.innerHTML=0;
+ ScooreDom.innerHTML=0;
+      score=0;
     // Start the quiz over
     newQuiz();
     
