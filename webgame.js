@@ -139,7 +139,7 @@ $(document).ready(function(){
   
 // FUNCTION DECLARATIONS ------
   
-  // Start the quiz
+// Start the quiz
        let scoreplus=20;
     let score=0;
   newQuiz = function() { 
@@ -337,7 +337,7 @@ $(document).ready(function(){
       // Display user score as a percentage
            if(correctAnswersCounter==quiz.length){audio4.play();}
         else{
-            audio4.play();
+            audio3.play();
       userScore.text(Math.floor((correctAnswersCounter / quiz.length) * 100) + "%");
      }
     }
@@ -380,7 +380,7 @@ $(document).ready(function(){
     // Go to the first page
     resultsPage.hide();
     initPage.show(300);
- ScooreDom.innerHTML=0;
+  ScooreDom.innerHTML=0;
       score=0;
     // Start the quiz over
     newQuiz();
