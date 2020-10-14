@@ -278,10 +278,14 @@ $(document).ready(function(){
   
   // Clicking on an answer:
   answerDiv.on('click', function(){
-    
+      
+      if(toBeHighlighted != undefined){
+           toBeHighlighted.removeClass('questions-page--choose');
+    toBeMarked.removeClass('ion-close-round');
+      }
     // Make the submit button visible
     submitBtn.show(300);
-    
+   
     // Remove pointer from any answer that already has it
     deselectAnswer();
     
@@ -293,6 +297,9 @@ $(document).ready(function(){
     
     // Store current answer div for highlighting purposes
     getSelectedAnswerDivs(this);
+      toBeHighlighted.addClass('questions-page--choose');
+    toBeMarked.addClass('ion-close-round');
+      
     
   });
   
@@ -358,6 +365,11 @@ $(document).ready(function(){
     // Enable ability to select an answer
     answerDiv.on('click', function(){
       // Make the submit button visible
+         if(toBeHighlighted != undefined){
+           toBeHighlighted.removeClass('questions-page--choose');
+    toBeMarked.removeClass('ion-close-round');
+      }
+        
       submitBtn.show(300);
       // Remove pointer from any answer that already has it
       deselectAnswer();
@@ -367,6 +379,8 @@ $(document).ready(function(){
       getSelectedAnswerDivs(this);
       // Store current selection as user answer
       getUserAnswer(this);
+        toBeHighlighted.addClass('questions-page--choose');
+    toBeMarked.addClass('ion-close-round');
     });
     
   });
