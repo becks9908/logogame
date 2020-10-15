@@ -111,7 +111,7 @@ $(document).ready(function(){
   // QUIZ CONTENT ------
     quiz = [
     {
-      question: "1.  Which one is AAPL?",
+      question: "1. 如果想要買iPhone應選哪個公司呢?",
       answers: ["AAPL", "DIS", "IBM", "INTC"],
       correctAnswer: "AAPL",
     },
@@ -335,6 +335,9 @@ $(document).ready(function(){
   // Clicking on the continue button:
   continueBtn.on('click', function(){
  
+   // if (questionCounter==2) {
+     // audio4.play();
+    //}
     // Increment question number until there are no more questions, then advance to the next page
     if (questionCounter < quiz.length - 1) {
       questionCounter++;
@@ -345,10 +348,10 @@ $(document).ready(function(){
       // Display user score as a percentage
            if(correctAnswersCounter==quiz.length){audio4.play();}
         else{
-            audio3.play();
+            
       userScore.text(Math.floor((correctAnswersCounter / quiz.length) * 100) + "%");
      }
-    }
+    
     
     // Load the next question and set of answers
     generateQuestionAndAnswers();

@@ -131,9 +131,9 @@ $(document).ready(function(){
       correctAnswer: "台積電"
     },
     {
-      question: "5. 下列何者為美律?",
-      answers: ["可成", "瑞昱", "美律", "大立光"],
-      correctAnswer: "美律"    
+      question: "5. 下列何者專門做電池?",
+      answers: ["可成", "瑞昱", "美律", "興能高"],
+      correctAnswer: "興能高"    
     }
   ];
   
@@ -244,6 +244,7 @@ $(document).ready(function(){
   clearHighlightsAndFeedback = function() {
     answerDiv.removeClass('questions-page--correct');
     answerDiv.removeClass('questions-page--incorrect');
+    answerDiv.removeClass('questions-page--choose');
     feedbackDiv.removeClass('ion-checkmark-round');
     feedbackDiv.removeClass('ion-close-round');
   };
@@ -332,7 +333,7 @@ $(document).ready(function(){
   
   // Clicking on the continue button:
   continueBtn.on('click', function(){
- 
+    
     // Increment question number until there are no more questions, then advance to the next page
     if (questionCounter < quiz.length - 1) {
       questionCounter++;
@@ -343,7 +344,7 @@ $(document).ready(function(){
       // Display user score as a percentage
            if(correctAnswersCounter==quiz.length){audio4.play();}
         else{
-            audio3.play();
+            
       userScore.text(Math.floor((correctAnswersCounter / quiz.length) * 100) + "%");
      }
     }
