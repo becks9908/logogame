@@ -55,6 +55,8 @@ text-shadow:   1px 1px #444444;
 
 h1, h2, h3, h4, h5, h6, div, p, i {
   margin: 0;
+    font-family: 'Ranchers','微軟正黑體';
+    letter-spacing: 5px;
 }
 
 form {
