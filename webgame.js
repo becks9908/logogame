@@ -57,6 +57,8 @@ const ScooreDom = document.getElementById('scorenum');
     var audio2 = document.getElementById("incorrect");
     var audio3 = document.getElementById("end");
     var audio4 = document.getElementById("end2");
+    var audio5 = document.getElementById("dis_1");
+    var audio6 = document.getElementById("dis_2");
     
 
 $(document).ready(function(){
@@ -111,12 +113,12 @@ $(document).ready(function(){
   // QUIZ CONTENT ------
     quiz = [
     {
-      question: "1. 如果想要買iPhone應選哪個公司呢?",
+      question: "1. 如果想要買iPhone要選哪間公司呢?",
       answers: ["AAPL", "DIS", "IBM", "INTC"],
       correctAnswer: "AAPL",
     },
     {
-      question: "2. Which one is DIS?",
+      question: "2. Which one is 迪士尼(Dis)?",
       answers: ["ADBE", "TSLA", "FB", "DIS"],
       correctAnswer: "DIS"
     },
@@ -334,14 +336,17 @@ $(document).ready(function(){
   
   // Clicking on the continue button:
   continueBtn.on('click', function(){
- 
-   // if (questionCounter==2) {
-     // audio4.play();
-    //}
+     if(questionCounter==0){
+        audio5.play();
+    }
+   if(questionCounter==1){
+        audio6.play();
+    }
     // Increment question number until there are no more questions, then advance to the next page
     if (questionCounter < quiz.length - 1) {
       questionCounter++;
     }
+    
     else {
       questionsPage.hide();
       resultsPage.show(300);
@@ -351,7 +356,7 @@ $(document).ready(function(){
             
       userScore.text(Math.floor((correctAnswersCounter / quiz.length) * 100) + "%");
      }
-    
+    }
     
     // Load the next question and set of answers
     generateQuestionAndAnswers();
