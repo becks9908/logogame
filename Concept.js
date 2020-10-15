@@ -278,8 +278,8 @@ $(document).ready(function(){
   
   // Clicking on an answer:
   answerDiv.on('click', function(){
-    
-    if(toBeHighlighted != undefined){
+   
+      if(toBeHighlighted != undefined){
            toBeHighlighted.removeClass('questions-page--choose');
     toBeMarked.removeClass('ion-close-round');
       }
@@ -364,6 +364,7 @@ $(document).ready(function(){
     // Enable ability to select an answer
     answerDiv.on('click', function(){
       // Make the submit button visible
+     
       if(toBeHighlighted != undefined){
            toBeHighlighted.removeClass('questions-page--choose');
     toBeMarked.removeClass('ion-close-round');
